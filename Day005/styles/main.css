@@ -229,3 +229,33 @@ svg {
     stroke: #7BA2FF;
 }
 
+.tooltip-text{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: -20px ;
+    left: -10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 65% 95%, 40% 75%, 0% 75%);
+    /* polygon(0% 0%, 100% 100%, 100% 80%, 60% 80%, 50% 95%, 40% 80%, 0%, 80%) */
+    font-size: 7px;
+    text-align: center;
+    padding-top: 2px;
+    color: white;
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.serie-2 .tooltip-text {
+    background-color: #7BA2FF;
+}
+
+.serie-1 .tooltip-text {
+    background-color: #FA7373;
+}
+
+

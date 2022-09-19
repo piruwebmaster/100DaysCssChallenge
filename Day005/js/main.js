@@ -4,12 +4,38 @@ let data1 = [];
 let data2 = [];
 
 function initHandler(){
+
+    document.body.addEventListener("mouseover",mouseOverHandler);
+    document.body.addEventListener("mouseout",mouseLeaveHandler);
+
     setInterval(() => {
         updateChart()
-    }, 1000);
+    },2500);
     
 
 }
+
+
+
+
+function mouseOverHandler(ev){
+    
+    if(! ev.target.classList.contains("chart-dot"))
+        return false
+    let target = ev.target.querySelector(".tooltip-text");
+    if(target)
+        target.classList.add("display-block");
+}
+
+function mouseLeaveHandler(ev){
+    if(!ev.target.classList.contains("chart-dot"))
+        return false;
+    let target = ev.target.querySelector(".tooltip-text");
+    if(target)
+        target.classList.remove("display-block");
+    
+}
+
 
 function updateChart(){
     data1 = fillData(data1);    
@@ -19,14 +45,17 @@ function updateChart(){
     applyMargin("serie-2", data2)
 
     plotLine("serie-1",data1);
-    plotLine("serie-2",data1);
+    plotLine("serie-2",data2);
 }
 
 
 function plotLine(serieSelector, data){
 
     let xy = data.map((value,index)=>{
-        return getXY(`.${serieSelector} .chart-dot.dot-${index+1}`);
+        let dotSelector = `.${serieSelector} .chart-dot.dot-${index+1}`
+        var tolTip = document.querySelector(`${dotSelector} .tooltip-text`) ;
+        tolTip.innerHTML = 1000 + value;
+        return getXY(dotSelector);
     });
 
     drawLine(`.chart-serie.${serieSelector}`, xy);
@@ -61,3 +90,4 @@ function applyMarginToDot(selector, margin){
     let $dot = document.querySelector(selector);
     $dot.style.marginTop = `${margin}px`;    
 }
+
