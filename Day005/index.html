@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Day 005</title>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="center">
+            <div class="header flex flex-row justify-content-space-between font-bold">
+                <section class="mt-1 ml-1">
+                    <h5>WEEKLY REPORT</h5>
+                    <p>01.-Feb - 07. Feb</p>
+                </section>
+                <section class="mt-1 mr-1 text-align-right">
+                    <p>Revenue</p>
+                    <h5>$ 3621.79</h5>
+                </section>
+            </div>
+            <div class="body">
+                <div class="y-axis pt-1 align-items-center font-9">
+                    <span class="pill background-red"></span>
+                    <p class="pl-1">Views</p>
+                    <span class="pill background-blue ml-2"></span>
+                    <p class="pl-1 pr-1">Purchases</p>
+                </div>
+                <div class="chart mt-1">
+                    <div class="chart-container flex flex-column justify-content-space-around position-relative">
+                        <div class="chart-line chart-line-top"></div>
+                        <div class="chart-line chart-line-center"></div>
+                        <div class="chart-line chart-line-bottom"></div>
+                        <div class="chart-serie serie-1 flex justify-content-space-around">
+                            <svg class="stroke-red">
+                                <polyline points=""></polyline>
+                            </svg>
+                            <div class="chart-dot dot-1 background-red"></div>
+                            <div class="chart-dot dot-2 background-red"></div>
+                            <div class="chart-dot dot-3 background-red"></div>
+                            <div class="chart-dot dot-4 background-red"></div>
+                            <div class="chart-dot dot-5 background-red"></div>
+                            <div class="chart-dot dot-6 background-red"></div>
+                            <div class="chart-dot dot-7 background-red"></div>
+                        </div>    
+                        <div class="chart-serie serie-2 flex justify-content-space-around">
+                            <svg class="stroke-blue">
+                                <polyline points=""></polyline>
+                            </svg>
+                            <div class="chart-dot dot-1 background-blue"></div>
+                            <div class="chart-dot dot-2 background-blue"></div>
+                            <div class="chart-dot dot-3 background-blue"></div>
+                            <div class="chart-dot dot-4 background-blue"></div>
+                            <div class="chart-dot dot-5 background-blue"></div>
+                            <div class="chart-dot dot-6 background-blue"></div>
+                            <div class="chart-dot dot-7 background-blue"></div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="x-axis flex justify-content-space-around font-9 mt-1 text-align-center">
+                    <div class="day">MON</div>
+                    <div class="day">TUE</div>
+                    <div class="day">WED</div>
+                    <div class="day">THU</div>
+                    <div class="day">FRI</div>
+                    <div class="day">SAT</div>
+                    <div class="day">SUN</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
