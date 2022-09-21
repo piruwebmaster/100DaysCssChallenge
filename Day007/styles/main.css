@@ -36,7 +36,7 @@
 
 .header {
   background-color: #5f98cd;
-  width: 360px;
+  width: 320px;
   height: 50px;
 }
 
@@ -78,7 +78,7 @@
   width: 80%;
   border-radius: 15px;
   height: 30px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;  
 }
 
 .search-box input {
@@ -275,12 +275,13 @@
   transform: translateX(20px);
   opacity: 0;
   transition: all 0.3s ease-in-out;  
+  z-index: -10;
 }
 
 
 .offcanvas-menu{
   background-color: #43627d;
-  width: 200px;
+  width: 300px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 10px;
@@ -291,11 +292,11 @@
 .offcanvas-menu a {
   display: block;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 16px;
   color: #93B2CD;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 10px ;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px ;
 }
 
 .offcanvas-menu a span {
