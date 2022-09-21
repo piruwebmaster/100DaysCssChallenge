@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Day007</title>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="center">
+            <div class="offcanvas-menu cemter">
+                <nav class="flex flex-column">
+                    <a href="#"><span class="fas fa-dashboard"></span> Dashboard</a>
+                    <a href="#"><span class="fas fa-user"></span> Profile</a>
+                    <a href="#"><span class="fas fa-bell"></span> Notifications</a>
+                    <a href="#"><span class="fas fa-comment"></span> Messages</a>
+                    <a href="#"><span class="fas fa-gear"></span> Settings</a>
+                </nav>
+            </div>
+            <div class="card center">
+                <div class="header flex flex-row space-around align-items-center">
+                    <div class="card-btn-menu flex flex-column justify-content-space-between">
+                        <div class="dot"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <h1 class="card-title text-white">Notifications</h1>
+                    <div class="card-btn-search">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="search-box flex align-items-center justify-content-center search-box-display-none">
+                        <input type="text" placeholder="Search ...">
+                    </div>
+                </div>
+                <div class="body relative">
+                    <div class="line"></div>
+                    <div class="notifications">
+
+                        <div class="notification">
+                            <div class="circle"></div>
+                            <p class="date-time">9:24 AM</p>
+                            <p class="notification-text"><strong>John Walker</strong> posted a photo on your wall.</p>
+                        </div>
+                        <div class="notification">
+                            <div class="circle"></div>
+                            <p class="date-time">8:19 AM</p>
+                            <p class="notification-text"><strong>Allice Parker</strong> commented your last post.</p>
+                        </div>
+                        <div class="notification">
+                            <div class="circle"></div>
+                            <p class="date-time">Yesterday</p>
+                            <p class="notification-text"><strong>Luke Wayne</strong> added you as as friend.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
